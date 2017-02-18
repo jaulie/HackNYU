@@ -34,22 +34,28 @@
 		</div>
         <button id="eventsBtn" class="round_btn eventsBtn_closed"><i class="fa fa-calendar" aria-hidden="true"></i></button>
 		<div class="events_search_options_menu_hidden">
-			<button class="events_options_btn_hidden">Halal</button> <br><br><br>
-            <button class="events_options_btn_hidden">Vegan</button> <br><br><br>
-            <button class="events_options_btn_hidden">Kosher</button> <br><br><br>
+			<button class="events_options_btn_hidden">Sports</button> <br><br><br>
+            <button class="events_options_btn_hidden">Concerts</button> <br><br><br>
+            <button class="events_options_btn_hidden">Parties</button> <br><br><br>
 		</div>
         <button id="drivingBtn" class="round_btn drivingBtn_closed"><i class="fa fa-car" aria-hidden="true"></i></button>
 		<div class="driving_search_options_menu_hidden">
-			<button class="driving_options_btn_hidden">Halal</button> <br><br><br>
-            <button class="driving_options_btn_hidden">Vegan</button> <br><br><br>
-            <button class="driving_options_btn_hidden">Kosher</button> <br><br><br>
+			<button class="driving_options_btn_hidden">Fuel Efficient</button> <br><br><br>
+            <button class="driving_options_btn_hidden">Quickest</button> <br><br><br>
+            <button class="driving_options_btn_hidden">Slowest</button> <br><br><br>
 		</div>
 	</div>
 
+    
 
 
 	<!-- The background. -->
     <div class="background" id="background">
+        
+        <!-- The actual map display. -->
+        <div id="map"></div>
+        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABwcVlNsGZzZQMJj4ZcANinfAad5N9aSo&v=3&callback=initMap"></script>
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
