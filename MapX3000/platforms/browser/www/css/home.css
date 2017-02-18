@@ -1,0 +1,34 @@
+.search_bar_div {
+	position: absolute;
+	text-align: center;
+	top: 50px;
+	width: 100%;
+	height: 50%;
+	color: lightgray;
+	background-color: orange;
+	display: table;
+	border: none;
+}
+#search_bar {
+	position: relative;
+	left: -20px;
+	top: 3px;
+	border: none;
+	color: lightgray;
+	background-color: orange;
+}
+.table_cell {
+	display: table-cell;
+	border: none;
+}
+#change_type_btn {
+	position: relative;
+	top: -8px;
+	left: -5px;
+	border: none;
+	font-size: 15px;
+}
+
+.background {
+	background-color: white;
+}
