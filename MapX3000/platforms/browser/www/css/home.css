@@ -21,14 +21,39 @@
 	display: table-cell;
 	border: none;
 }
-#change_type_btn {
+#change_search_type_btn {
 	position: relative;
 	top: -8px;
 	left: -5px;
 	border: none;
 	font-size: 15px;
 }
-
+.search_type_buttons {
+	position: relative;
+	top: 20px;
+	text-align: left;
+}
+.round_btn {
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-radius: 30px;
+}
+#foodBtn {
+	position: relative;
+	background-color: orange;
+	left: 5px;
+}
+#eventsBtn {
+	position: relative;
+	background-color: blue;
+	left: 5px;
+}
+#drivingBtn {
+	position: relative;
+	background-color: green;
+	left: 5px;
+}
 .background {
 	background-color: white;
 }

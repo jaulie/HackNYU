@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/home.css">
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <title>Home</title>
     </head>
 
@@ -14,14 +15,24 @@
 
     <!-- The search bar. -->
     <div class="search_bar_div input-group">
+    	<!-- The cell for the change search type button. -->
     	<div class="table_cell">
-    		<button id="change_type_btn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-			</button>
+    		<button id="change_search_type_btn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
     	</div>
+
+    	<!-- The cell for the search bar. -->
 	  	<div class="table_cell"><input type="text" id="search_bar" class="form-control" placeholder="Search"></div>
 	</div>  
 
-
+	<!-- All of the buttons that will appear (events, food, driving) -->
+	<div class="search_type_buttons">
+		<br><br>
+		<button id="foodBtn" class="round_btn"><i class="fa fa-cutlery" aria-hidden="true"></i></button>
+		<br><br>
+		<button id="eventsBtn" class="round_btn"><i class="fa fa-cutlery" aria-hidden="true"></i></button>
+		<br><br>
+		<button id="drivingBtn" class="round_btn"><i class="fa fa-cutlery" aria-hidden="true"></i></button>
+	</div>
 
 
 
