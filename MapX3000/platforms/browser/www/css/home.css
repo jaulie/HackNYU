@@ -6,17 +6,18 @@
 	width: 100%;
 	height: 50%;
 	color: lightgray;
-	background-color: orange;
+	background-color: white;
 	display: table;
 	border: none;
+	-webkit-transition-duration: 0.4s;
 }
-#search_bar {
+#searchBar {
 	position: relative;
-	left: -20px;
+	left: -40px;
 	top: 3px;
 	border: none;
 	color: lightgray;
-	background-color: orange;
+	background-color: rgba(0,0,0,0);
 }
 .table_cell {
 	display: table-cell;
@@ -29,9 +30,8 @@
 	top: -8px;
 	left: -5px;
 	border: none;
-	font-size: 15px;
-	color: black;
-	background-color: red;
+	font-size: 18px;
+	color: lightgray;
 	z-index: 1;
 }
 .search_type_buttons {
@@ -50,6 +50,21 @@
   	transition: all 0.5s ease;
 	left: 5px;
 }
+#eventsBtn {
+	position: absolute;
+  	transition: all 0.5s ease;
+	left: 5px;
+	z-index: -1;
+}
+#drivingBtn {
+	position: absolute;
+  	transition: all 0.5s ease;
+	left: 5px;
+	z-index: -1;
+}
+
+
+/* Expanded/Closed states for buttons. */
 .foodBtn_expanded {
 	top: 40px;
 	z-index: 1;
@@ -59,12 +74,6 @@
 	top: -10px;
 	z-index: -1;
 	background-color: rgba(0,0,0,0);
-}
-#eventsBtn {
-	position: absolute;
-  	transition: all 0.5s ease;
-	left: 5px;
-	z-index: -1;
 }
 .eventsBtn_expanded {
 	top: 100px;
@@ -76,12 +85,6 @@
 	z-index: -1;
 	background-color: rgba(0,0,0,0);
 }
-#drivingBtn {
-	position: absolute;
-  	transition: all 0.5s ease;
-	left: 5px;
-	z-index: -1;
-}
 .drivingBtn_expanded {
 	top: 160px;
 	z-index: 1;
@@ -92,22 +95,6 @@
 	z-index: -1;
 	background-color: rgba(0,0,0,0);
 }
-.fa-cutlery {
-	/*color: rgb(0, 0, 0, 0);*/
-}
-@keyframes foodbutton_dropdown {
-	from   {top: -10px;}
-    to {top: 30px;}
-}
-@keyframes eventsbutton_dropdown {
-	from   {top: -10px;}
-    to {top: 90px;}
-}
-@keyframes drivingbutton_dropdown {
-	from   {top: -10px;}
-    to {top: 150px;}
-}
-
 
 
 .background {

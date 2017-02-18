@@ -1,5 +1,7 @@
 // Variables
 var changeSearchTypeBtn = document.getElementById('change_search_type_btn');
+var searchBar = document.getElementById('searchBar');
+var searchBarDiv = document.getElementsByClassName('search_bar_div')[0];
 
 var foodBtn = $('#foodBtn');
 var eventsBtn = $('#eventsBtn');
@@ -24,7 +26,7 @@ changeSearchTypeBtn.onclick = function() {
 		eventsBtn.removeClass('eventsBtn_expanded')
 		eventsBtn.addClass('eventsBtn_closed');
 	}
-	
+
 	if(drivingBtn.hasClass('drivingBtn_closed')) {
 		drivingBtn.removeClass('drivingBtn_closed')
 		drivingBtn.addClass('drivingBtn_expanded');
@@ -33,3 +35,21 @@ changeSearchTypeBtn.onclick = function() {
 		drivingBtn.addClass('drivingBtn_closed');
 	}
 };
+
+
+foodBtn.click(function(){
+	// searchBar.style.backgroundColor = foodBtn.css('background-color');
+	searchBarDiv.style.backgroundColor = foodBtn.css('background-color');
+});
+
+eventsBtn.click(function(){
+	// searchBar.style.backgroundColor = eventsBtn.css('background-color');
+	searchBarDiv.style.backgroundColor = eventsBtn.css('background-color');
+});
+
+drivingBtn.click(function(){
+	// searchBar.style.backgroundColor = drivingBtn.css('background-color');
+	searchBarDiv.style.backgroundColor = drivingBtn.css('background-color');
+});
+
+
