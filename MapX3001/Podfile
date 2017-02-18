@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MapX3001' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MapX3001
+pod 'YelpAPI'
+  target 'MapX3001Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MapX3001UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
