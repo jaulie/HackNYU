@@ -120,7 +120,8 @@ drivingBtn.click(function(){
 /* Initializes the map. */
 function initMap() {
     // Constructor creates a new map - only center and zoom are required.
-    map = new google.maps.Map(document.getElementById('map'), {
+    var m = $('#map');
+    map = new google.maps.Map(m, {
         center: {lat: 40.7413549, lng: -73.9980244},
         zoom: 15,
         mapTypeControl: false
@@ -165,6 +166,7 @@ function initMap() {
     foodOptionChoices.click(showListings());
     eventsOptionChoices.click(showListings());
     drivingOptionChoices.click(showListings());
+    
 } // end of method.
              
         
