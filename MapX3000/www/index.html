@@ -19,25 +19,26 @@
     	<div class="table_cell">
     		<button id="change_search_type_btn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
     	</div>
-
+    	&nbsp;&nbsp;&nbsp;
     	<!-- The cell for the search bar. -->
 	  	<div class="table_cell"><input type="text" id="search_bar" class="form-control" placeholder="Search"></div>
 	</div>  
 
 	<!-- All of the buttons that will appear (events, food, driving) -->
 	<div class="search_type_buttons">
-		<br><br>
-		<button id="foodBtn" class="round_btn"><i class="fa fa-cutlery" aria-hidden="true"></i></button>
-		<br><br>
-		<button id="eventsBtn" class="round_btn"><i class="fa fa-cutlery" aria-hidden="true"></i></button>
-		<br><br>
-		<button id="drivingBtn" class="round_btn"><i class="fa fa-cutlery" aria-hidden="true"></i></button>
+		<button id="foodBtn" class="round_btn foodBtn_closed"><i class="fa fa-cutlery" aria-hidden="true"></i></button>
+		<button id="eventsBtn" class="round_btn eventsBtn_closed"><i class="fa fa-cutlery" aria-hidden="true"></i></button>
+		<button id="drivingBtn" class="round_btn drivingBtn_closed"><i class="fa fa-cutlery" aria-hidden="true"></i></button>
 	</div>
 
 
 
 	<!-- The background. -->
-    <div class="background">
+    <div class="background" id="background">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    	<script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
     </div>
 

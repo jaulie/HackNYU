@@ -1,3 +1,4 @@
+/* Search bar stuff */
 .search_bar_div {
 	position: absolute;
 	text-align: center;
@@ -21,12 +22,17 @@
 	display: table-cell;
 	border: none;
 }
+
+/* Search type buttons. */
 #change_search_type_btn {
 	position: relative;
 	top: -8px;
 	left: -5px;
 	border: none;
 	font-size: 15px;
+	color: black;
+	background-color: red;
+	z-index: 1;
 }
 .search_type_buttons {
 	position: relative;
@@ -40,20 +46,70 @@
 	border-radius: 30px;
 }
 #foodBtn {
-	position: relative;
-	background-color: orange;
+	position: absolute;
+  	transition: all 0.5s ease;
 	left: 5px;
+}
+.foodBtn_expanded {
+	top: 40px;
+	z-index: 1;
+	background-color: rgb(255, 153, 0);
+}
+.foodBtn_closed {
+	top: -10px;
+	z-index: -1;
+	background-color: rgba(0,0,0,0);
 }
 #eventsBtn {
-	position: relative;
-	background-color: blue;
+	position: absolute;
+  	transition: all 0.5s ease;
 	left: 5px;
+	z-index: -1;
+}
+.eventsBtn_expanded {
+	top: 100px;
+	z-index: 1;
+	background-color: rgb(0, 102, 255);
+}
+.eventsBtn_closed {
+	top: -10px;
+	z-index: -1;
+	background-color: rgba(0,0,0,0);
 }
 #drivingBtn {
-	position: relative;
-	background-color: green;
+	position: absolute;
+  	transition: all 0.5s ease;
 	left: 5px;
+	z-index: -1;
 }
+.drivingBtn_expanded {
+	top: 160px;
+	z-index: 1;
+	background-color: rgb(51, 204, 51);
+}
+.drivingBtn_closed {
+	top: -10px;
+	z-index: -1;
+	background-color: rgba(0,0,0,0);
+}
+.fa-cutlery {
+	/*color: rgb(0, 0, 0, 0);*/
+}
+@keyframes foodbutton_dropdown {
+	from   {top: -10px;}
+    to {top: 30px;}
+}
+@keyframes eventsbutton_dropdown {
+	from   {top: -10px;}
+    to {top: 90px;}
+}
+@keyframes drivingbutton_dropdown {
+	from   {top: -10px;}
+    to {top: 150px;}
+}
+
+
+
 .background {
 	background-color: white;
 }
