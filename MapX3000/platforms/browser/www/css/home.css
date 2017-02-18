@@ -54,13 +54,11 @@
 	position: absolute;
   	transition: all 0.5s ease;
 	left: 5px;
-	z-index: -1;
 }
 #drivingBtn {
 	position: absolute;
   	transition: all 0.5s ease;
 	left: 5px;
-	z-index: -1;
 }
 
 
@@ -95,6 +93,106 @@
 	z-index: -1;
 	background-color: rgba(0,0,0,0);
 }
+
+
+/* Buttons options. */
+.food_options_btn_showing {
+    border: none;
+    font-size: 18px;
+    color: black;
+    -webkit-transition-duration: 0.4s;
+}
+.food_options_btn_hidden {
+    border: none;
+    font-size: 18px;
+    color: rgba(0,0,0,0);
+    -webkit-transition-duration: 0.4s;
+}
+.events_options_btn_showing {
+    border: none;
+    font-size: 18px;
+    color: black;
+    -webkit-transition-duration: 0.4s;
+}
+.events_options_btn_hidden {
+    border: none;
+    font-size: 18px;
+    color: rgba(0,0,0,0);
+    -webkit-transition-duration: 0.4s;
+}
+.driving_options_btn_showing {
+    border: none;
+    font-size: 18px;
+    color: black;
+    -webkit-transition-duration: 0.4s;
+}
+.driving_options_btn_hidden {
+    border: none;
+    font-size: 18px;
+    color: rgba(0,0,0,0);
+    -webkit-transition-duration: 0.4s;
+}
+.food_search_options_menu_showing {
+	position: relative;
+    text-align: center;
+	width: 150px;
+	height: 160px;
+	left: 60px;
+	top: 50px;
+	background-color: rgba(255, 153, 0, 1);
+    -webkit-transition-duration: 0.4s;
+}
+.food_search_options_menu_hidden {
+	position: relative;
+    text-align: center;
+	width: 150px;
+	height: 160px;
+	left: 60px;
+	top: 50px;
+	background-color: rgba(255, 153, 0, 0);
+    -webkit-transition-duration: 0.4s;
+}
+.events_search_options_menu_showing {
+	position: absolute;
+    text-align: center;
+	width: 150px;
+	height: 160px;
+	left: 60px;
+	top: 50px;
+	background-color: rgba(0, 102, 255, 1);
+    -webkit-transition-duration: 0.4s;
+}
+.events_search_options_menu_hidden {
+	position: absolute;
+    text-align: center;
+	width: 150px;
+	height: 160px;
+	left: 60px;
+	top: 50px;
+	background-color: rgba(0, 102, 255, 0);
+    -webkit-transition-duration: 0.4s;
+}
+.driving_search_options_menu_showing {
+	position: absolute;
+    text-align: center;
+	width: 150px;
+	height: 160px;
+	left: 60px;
+	top: 50px;
+	background-color: rgba(51, 204, 51, 1);
+    -webkit-transition-duration: 0.4s;
+}
+.driving_search_options_menu_hidden {
+	position: absolute;
+    text-align: center;
+	width: 150px;
+	height: 160px;
+	left: 60px;
+	top: 50px;
+	background-color: rgba(51, 204, 51, 0);
+    -webkit-transition-duration: 0.4s;
+}
+
 
 
 .background {
